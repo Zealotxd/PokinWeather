@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Maven+Pro:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+}
+.top{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 3%;
+    background : linear-gradient(to right , #020627, #000A8B );
+    color: white;
+    box-shadow: 0px 50px 0px rgba(0,0,0,0.1);
+
+}
+
+.topnav {
+    background-color:  #020627;
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #ffffff;
+    color: #020627;
+  }
+  
+
+.center{
+    display: flex;
+    width: 100%;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: "header header"
+                        "city temp"
+                        "city humidity" ;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 55px 1fr 1fr;
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 50px rgba(0,0,0,0.1);
+    background-color: rgb(12, 5, 37);
+}
+
+header{
+    grid-area: header;
+    padding: 10px;
+    border-radius: 30px 30px 0 0;
+    text-align: center;
+    background: linear-gradient(to right, #020627, #000A8B  )
+
+}
+
+header input{
+    outline: none;
+    border: none;
+    padding: 10 px 20px;
+    border-radius: 20px ;
+    
+}
+
+header a{
+    color:white;
+    padding: 8px 10px;
+    transition: .3s;
+    border-radius: 50%;
+}
+
+header a:hover{
+    background: rgba(0,0,0,0.1);
+}
+
+.city{
+    grid-area: city;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid white;
+    font-size : 2em;
+    color: white;
+}
+
+.temperature{
+    grid-area: temp;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+    font-size : 2em;
+    color: white;
+}
+
+.humidity{
+    grid-area:humidity;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size : 2em;
+    color: white
+}
+
+body {
+    background-image: url("https://media.istockphoto.com/id/1339787499/photo/empty-dark-blue-studio-room-with-light-and-shadow-abstract-background-copy-space-studio-room.jpg?b=1&s=170667a&w=0&k=20&c=sEYFpHbrxOugC-NlO4vh1AQurJAsR-RnLbg_KHgj3kM=");
+    background-color: #cccccc;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+   
